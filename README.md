@@ -4,33 +4,33 @@ This repository contains some simple rspec-based exercises to help understand va
 
 ## What is Data Processing
 
-3 Parts
+3 Parts (ETL)
 
-1. (Input) Take data from somewhere, turn it into a hash.
-2. (Process) Create a new hash from that original data that reflects the data you want.
-3. (Output) Save that data somewhere.
+1. (Extract) Take data from somewhere, turn it into a hash.
+2. (Transform) Create a new hash from that original data that reflects the data you want.
+3. (Load) Save that data somewhere.
 
 Depending on what the inputs and outputs are we call this process different things. For instance:
 
 ### Indexing
 
-* **Input**: Database
-* **Process**: Anything
-* **Output**: Solr
+* **Extract**: Database
+* **Transform**: Anything
+* **Load**: Solr
 
 ###  Data Migration
 
-* **Input**: Database
-* **Process**: Anything
-* **Output**: Database
+* **Extract**: Database
+* **Transform**: Anything
+* **Load**: Same Database
 
 ###  Caching
 
-* **Input**: Database
-* **Process**: None
-* **Output**: Database
+* **Extract**: Database
+* **Transform**: None
+* **Load**: Database
 
-When you take multiple of these sections of (Input->Process->Output) and chain them together you get a data pipeline.
+When you take multiple of these sections of (Extract->Transform->Load) and chain them together you get a data pipeline.
 
 For instance, for DPUL-Collections we plan to do:
 
@@ -40,7 +40,7 @@ For instance, for DPUL-Collections we plan to do:
 
 ### Goal
 
-Practice some common steps of what we do in the `Process` step.
+Practice some common steps of what we do in the `Transform` step.
 
 ### Contents
 
