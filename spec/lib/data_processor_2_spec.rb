@@ -37,8 +37,8 @@ RSpec.describe DataProcessor2 do
           first_name: "ANNA"
         }
       )
-      end
-      it "capitalizes first and last name" do
+    end
+    it "capitalizes first and last name" do
       # first and last name given capitalize both names
       expect(
         DataProcessor2.process(
@@ -57,7 +57,7 @@ RSpec.describe DataProcessor2 do
       expect(
         DataProcessor2.process(
           {
-          last_name: "bats"
+            last_name: "bats"
           }
         )
       ).to eq(
