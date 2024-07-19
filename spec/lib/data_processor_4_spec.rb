@@ -2,7 +2,7 @@ RSpec.describe DataProcessor4 do
   describe ".process" do
     it "adds full_name to a bunch of records" do
       expect(
-        DataProcessor3.process(
+        DataProcessor4.process(
           [
             {
               first_name: "Sean",
